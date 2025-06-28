@@ -9,6 +9,15 @@ version = '0.0.1'
 java {
     withSourcesJar()
     withJavadocJar()
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+javadoc {
+    options.encoding = "UTF-8"
 }
 
 repositories {
